@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./sass/style.min.css"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link href="http://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet" />
+
+</head>
+<body>
+    
+    <header>
+        <!-- Top Nav Start -->
+        <nav class="topNav">
+          <img
+            src="./assets/amazonlogo-removebg-preview.png"
+            alt="amazonlogo"
+            class="nav-logo"
+          />
+  
+          <div class="location">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-geo-alt"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+              />
+              <path
+                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+              />
+            </svg>
+            <p>
+              Deliver to
+              <br />
+              <b> Nigeria </b>
+            </p>
+          </div>
+          <form action="" class="search">
+            <select name="" id="">
+              <option value="">All</option>
+              <option value="">All</option>
+              <option value="">All</option>
+              <option value="">All</option>
+              <option value="">All</option>
+              <option value="">All</option>
+              <option value="">All</option>
+              <option value="">All</option>
+            </select>
+            <input type="search" name="" id="" />
+            <button type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </form>
+          <select name="" id="" class="lang">
+            <option value="">
+              <img src="./assets/icons8-usa-48.png" alt="" />
+              EN
+            </option>
+          </select>
+  
+          <p>
+            Hello, sign in
+            <br />
+            <b> Account & Lists </b>
+          </p>
+          <p>
+            Returns
+            <br />
+            <b> & Orders </b>
+          </p>
+          <div class="cart">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2em"
+              height="2em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="10.5" cy="19.5" r="1.5" fill="white" />
+              <circle cx="17.5" cy="19.5" r="1.5" fill="white" />
+              <path
+                fill="orange"
+                d="M13 13h2v-2.99h2.99v-2H15V5.03h-2v2.98h-2.99v2H13V13z"
+              />
+              <path
+                fill="white"
+                d="M10 17h8a1 1 0 0 0 .93-.64L21.76 9h-2.14l-2.31 6h-6.64L6.18 4.23A2 2 0 0 0 4.33 3H2v2h2.33l4.75 11.38A1 1 0 0 0 10 17z"
+              />
+            </svg>
+            <p>
+              <b> Cart </b>
+            </p>
+          </div>
+        </nav>
+        <!-- Top Nav end -->
+        <!-- Bottom Nav Start -->
+        <nav class="navbar navbar-expand-lg bottomNav">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="white"
+                      class="bi bi-list"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                      />
+                    </svg>
+                    All
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Today's Deal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Customer Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Registry</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gift Cards</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sell</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Bottom Nav end -->
+
+
+        <!-- body starts -->
+    </header>
+
+        <section class="row pt-3 px-3 pb-5 bg-light">
+          <div class="col-lg-2 holder">
+            <h6 class="ps-4">Deparment</h6>
+            <ul>
+              <li><a href="#">Kids' Home Store</a></li>
+              <li><a href="#">Kitchen & Dining</a></li>
+              <li><a href="#">Bedding</a></li>
+              <li><a href="#">Bath</a></li>
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Home Décor Products</a></li>
+              <li><a href="#">Wall Art</a></li>
+              <li><a href="#">Lighting & Ceiling Fans</a></li>
+              <li><a href="#">Seasonal Décor</a></li>
+              <li><a href="#">Event & Party Supplies</a></li>
+              <li><a href="#">Heating, Cooling & Air Quality</a></li>
+              <li><a href="#">Irons & Steamers</a></li>
+              <li><a href="#">Vacuums & Floor Care</a></li>
+              <li><a href="#">Storage & Organization</a></li>
+              <li><a href="#">Cleaning Supplies</a></li>
+            </ul><br>
+
+            <h6>Climate Pledge Friendly</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Climate Pledge Friendly
+              </label>
+            </div>
+            <h6>Augumented Reality</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                View In Your Room
+              </label>
+            </div>
+
+            <div>
+              <h6>Color</h6>
+              <div class="colorType container d-flex flex-wrap g-5">
+                <div class="color black bg-dark border border-1 border-dark"></div>
+                <div class="color grey bg-secondary border-dark"></div>
+                <div class="color white bg-light border border-1 border-secondary border-dark"></div>
+                <div class="color brown border-dark"></div>
+                <div class="color nude border-dark"></div>
+                <div class="color wine border-dark"></div>
+                <div class="color pink border-dark"></div>
+                <div class="color orange border-dark"></div>
+                <div class="color yellow border-dark"></div>
+                <div class="color cream border-dark"></div>
+                <div class="color green border-dark"></div>
+                <div class="color navyblue border-dark"></div>
+                <div class="color purple border-dark"></div> 
+                <div class="color gold border-dark"></div>
+                <div class="color silver border-dark"></div>
+                <div class="color multi border-dark"></div>
+                <div class="color clear border-dark"></div>
+                <div class="color stainless border-dark"></div>
+              </div>
+            </div>
+
+           <h6>Amazon Certified</h6>
+           <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Auto Replenishment
+              </label>
+           </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Works with Alexa
+              </label>
+            </div>
+
+
+            <h6>From Our Brands</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Our Brands
+              </label>
+            </div>
+
+            <h6>Featured Brands</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Bounty
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Presto!
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+               Amazon Basics
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Kleenex
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Dixie
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Amazon Basic Care
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                GLAD
+              </label>
+            </div>
+
+            <h6>Packaging Option</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Frustration-Free Packaging
+              </label>
+            </div>
+
+            <h6>New Arrival</h6>
+            <p>Last 30 days</p>
+            <p>Last 90 days</p>
+
+            <h6>Amazon Global Store</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Amazon Global Store
+              </label>
+            </div>
+
+            <h6>Condition</h6>
+            <p>New</p>
+            <p>Used</p>
+            <p>Renewed</p>
+
+            <h6>Price</h6> 
+            <p>Under $25</p> 
+            <p>$25 to $50</p> 
+            <p>$50 to $100</p> 
+            <p> $100 to $200</p>
+            <p>$200 & Above</p> 
+
+            <h6>Deals</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Today's Deal
+              </label>
+            </div>
+
+            <h6>Seller</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+              Amazon.com
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                888Lots
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Hour Loop
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Utopia Deals
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                JoyinDirect
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                EPFamily Direct
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                MetroDecor
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                COMFY PACKAGE
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                REFURB 360
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Songmics Direct
+              </label>
+            </div>
+
+            <h6>Availability</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Include Out of Stock
+              </label>
+            </div>
+          
+            
+          </div>  
+          
+          
+          <div class="col-lg-10">
+      
+            <h2>Home and Kitchen</h2>
+            <p class="home-p">Shop Kitchen and dinning, bedding, bath, furniture, home decor and more</p>
+
+            <div class="second">
+              <p class="secondLine p-3 rounded-3 ps-5">1-12 of over 80,000 results for <span class="text-danger">Home & Kitchen</span></p>
+            </div> 
+
+            <div class="row">
+
+              <div class="col-lg-4 ">
+                <div class="card-group me-5">
+                  <div class="card me-3 mb-2 border border-1 rounded-1">
+                    <img src="./assets/71e4FX1KzIL._AC_UL480_QL65_.jpg" class="card-img-top home" alt="tisue paper">
+                    <div class="card-body">
+                      <p class="card-text"><a href="#" class="text-decoration-none text-dark"> Bounty Quick-Size Paper Towels, White, <br> 16 Family Rolls = 40 Regular Rolls</a><br>
+                      <b>16 Rolls (Pack of 1).</b></p>
+                      <p class="card-text"><sup class="fs-5 fw-7">$</sup><span class="naira fs-3 fw-2">37</span> <sup class="fs-6 fw-10">43</sup><small class="text-muted"><br>($1.83/100 Sheets)  <span class="text-decoration-line-through">$40.78</span><br>
+                      $35.56 with Subscribe & Save discount</small><br> <span class="save">Save $2.00</span> <span></span> with coupon
+                      Get it as soon as <b>Thu, Oct 6 </b>  <br>$650.28 shipping</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card-group me-5" >
+                  <div class="card me-3 mb-2 border border-1 rounded-1">
+                    <img src="./assets/71e4FX1KzIL._AC_UL480_QL65_.jpg" class="card-img-top home" alt="tisue paper">
+                    <div class="card-body">
+                      <p class="card-text"><a href="#" class="text-decoration-none text-dark"> Bounty Quick-Size Paper Towels, White, <br> 16 Family Rolls = 40 Regular Rolls</a><br>
+                        <b>16 Rolls (Pack of 1).</b>
+                      </p>
+                      <p class="card-text"><sup class="fs-5 fw-7">$</sup><span class="naira fs-3 fw-2">37</span> <sup class="fs-6 fw-10">43</sup> <small class="text-muted"><br>($1.83/100 Sheets) $40.78
+                        $35.56 with Subscribe & Save discount</small><br> <span class="save">Save $2.00</span> with coupon
+                        Get it as soon as <b>Thu, Oct 6 </b> <br>$650.28 shipping
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card-group me-5">
+                  <div class="card me-3 mb-2 border border-1 rounded-1" >
+                    <img src="./assets/Presto.jpg" class="card-img-top home py-4" alt="tisue paper">
+                    <div class="card-body">
+                      <p class="card-text"><a href="#" class="text-decoration-none text-dark"> Bounty Quick-Size Paper Towels, White, <br> 16 Family Rolls = 40 Regular Rolls</a><br>
+                        <b>16 Rolls (Pack of 1).</b>
+                      </p>
+                      <p class="card-text"><sup class="fs-5 fw-7">$</sup><span class="naira fs-3 fw-2">37</span> <sup class="fs-6 fw-10">43</sup> <small class="text-muted"><br>($1.83/100 Sheets) $40.78
+                        $35.56 with Subscribe & Save discount</small><br> <span class="save">Save $2.00</span> with coupon
+                        Get it as soon as <b>Thu, Oct 6 </b> <br>$650.28 shipping
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div> 
+            
+            <div class="row">
+            
+              <div class="col-lg-4">
+                <div class="card-group me-5 rowTwo">
+                  <div class="card me-3 mb-2 border border-1 rounded-1">
+                    <img src="./assets/paperTowels.jpg" class="card-img-top home py-5" alt="tisue paper">
+                    <div class="card-body">
+                      <p class="card-text"><a href="#" class="text-decoration-none text-dark"> Bounty Quick-Size Paper Towels, White, <br> 16 Family Rolls = 40 Regular
+                        Rolls</a><br>
+                        <b>16 Rolls (Pack of 1).</b>
+                      </p>
+                      <p class="card-text"><sup>$</sup><span class="naira">37</span> <sup>43</sup> <small
+                        class="text-muted"><br>($1.83/100 Sheets) $40.78
+                        $35.56 with Subscribe & Save discount</small><br> <span class="save">Save $2.00</span> with coupon
+                        Get it as soon as <b>Thu, Oct 6 </b> <br>$650.28 shipping
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-group me-5 rowTwo">
+                  <div class="card me-3 mb-2 border border-1 rounded-1">
+                    <img src="./assets/71e4FX1KzIL._AC_UL480_QL65_.jpg" class="card-img-top home" alt="tisue paper">
+                    <div class="card-body">
+                      <p class="card-text"><a href="#" class="text-decoration-none text-dark"> Bounty Quick-Size Paper Towels, White, <br> 16 Family Rolls = 40 Regular
+                          Rolls</a><br>
+                        <b>16 Rolls (Pack of 1).</b>
+                      </p>
+                      <p class="card-text"><sup>$</sup><span class="naira">37</span> <sup>43</sup> <small
+                          class="text-muted"><br>($1.83/100 Sheets) $40.78
+                          $35.56 with Subscribe & Save discount</small><br> <span class="save">Save $2.00</span> with coupon
+                        Get it as soon as <b>Thu, Oct 6 </b> <br>$650.28 shipping</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-group me-5 rowTwo">
+                  <div class="card me-3 mb-2 border border-1 rounded-1">
+                    <img src="./assets/Kleenex.jpg" class="card-img-top home py-4" alt="tisue paper">
+                    <div class="card-body">
+                      <p class="card-text"><a href="#" class="text-decoration-none text-dark"> Bounty Quick-Size Paper Towels, White, <br> 16 Family Rolls = 40 Regular Rolls</a><br>
+                        <b>16 Rolls (Pack of 1).</b>
+                      </p>
+                      <p class="card-text"><sup>$</sup><span class="naira">37</span> <sup>43</sup> <small
+                      class="text-muted"><br>($1.83/100 Sheets) $40.78
+                      $35.56 with Subscribe & Save discount</small><br> <span class="save">Save $2.00</span> with coupon
+                      Get it as soon as <b>Thu, Oct 6 </b> <br>$650.28 shipping</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+            
+              <div class="col-lg-4">
+                <div class="card-group me-5 rowThree">
+                  <div class="card me-3 mb-2 border border-1 rounded-1">
+                    <img src="./assets/paperPlate.jpg" class="card-img-top home py-5" alt="tisue paper">
+                    <div class="card-body">
+                      <p class="card-text"><a href="#" class="text-decoration-none text-dark"> Bounty Quick-Size Paper Towels,
+                          White, <br> 16 Family Rolls = 40 Regular
+                          Rolls</a><br>
+                        <b>16 Rolls (Pack of 1).</b>
+                      </p>
+                      <p class="card-text"><sup>$</sup><span class="naira">37</span> <sup>43</sup> <small
+                          class="text-muted"><br>($1.83/100 Sheets) $40.78
+                          $35.56 with Subscribe & Save discount</small><br> <span class="save">Save $2.00</span> with coupon
+                        Get it as soon as <b>Thu, Oct 6 </b> <br>$650.28 shipping
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-group me-5 rowThree">
+                  <div class="card me-3 mb-2 border border-1 rounded-1">
+                    <img src="./assets/topdeal.jpg" class="card-img-top home" alt="tisue paper">
+                    <div class="card-body">
+                      <p class="card-text"><a href="#" class="text-decoration-none text-dark"> Bounty Quick-Size Paper Towels,
+                          White, <br> 16 Family Rolls = 40 Regular
+                          Rolls</a><br>
+                        <b>16 Rolls (Pack of 1).</b>
+                      </p>
+                      <p class="card-text"><sup>$</sup><span class="naira">37</span> <sup>43</sup> <small
+                          class="text-muted"><br>($1.83/100 Sheets) $40.78
+                          $35.56 with Subscribe & Save discount</small><br> <span class="save">Save $2.00</span> with coupon
+                        Get it as soon as <b>Thu, Oct 6 </b> <br>$650.28 shipping</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-group me-5 rowThree">
+                  <div class="card me-3 mb-2 border border-1 rounded-1">
+                    <img src="./assets/paperTowels.jpg" class="card-img-top home py-5" alt="tisue paper">
+                    <div class="card-body">
+                      <p class="card-text"><a href="#" class="text-decoration-none text-dark"> Bounty Quick-Size Paper Towels,
+                          White, <br> 16 Family Rolls = 40 Regular Rolls</a><br>
+                        <b>16 Rolls (Pack of 1).</b>
+                      </p>
+                      <p class="card-text"><sup>$</sup><span class="naira">37</span> <sup>43</sup> <small
+                          class="text-muted"><br>($1.83/100 Sheets) $40.78
+                          $35.56 with Subscribe & Save discount</small><br> <span class="save">Save $2.00</span> with coupon
+                        Get it as soon as <b>Thu, Oct 6 </b> <br>$650.28 shipping</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+            
+              <div class="col-lg-4">
+                <div class="card-group me-5 rowFour">
+                  <div class="card me-3 mb-2 border border-1 rounded-1">
+                    <img src="./assets/Glad.jpg" class="card-img-top home px-4" alt="tisue paper">
+                    <div class="card-body">
+                      <p class="card-text"><a href="#" class="text-decoration-none text-dark"> Bounty Quick-Size Paper Towels,
+                          White, <br> 16 Family Rolls = 40 Regular
+                          Rolls</a><br>
+                        <b>16 Rolls (Pack of 1).</b>
+                      </p>
+                      <p class="card-text"><sup>$</sup><span class="naira">37</span> <sup>43</sup> <small
+                          class="text-muted"><br>($1.83/100 Sheets) $40.78
+                          $35.56 with Subscribe & Save discount</small><br> <span class="save">Save $2.00</span> with coupon
+                        Get it as soon as <b>Thu, Oct 6 </b> <br>$650.28 shipping
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-group me-5 rowFour">
+                  <div class="card me-3 mb-2 border border-1 rounded-1">
+                    <img src="./assets/health.jpg" class="card-img-top home" alt="tisue paper">
+                    <div class="card-body">
+                      <p class="card-text"><a href="#" class="text-decoration-none text-dark"> Bounty Quick-Size Paper Towels,
+                          White, <br> 16 Family Rolls = 40 Regular
+                          Rolls</a><br>
+                        <b>16 Rolls (Pack of 1).</b>
+                      </p>
+                      <p class="card-text"><sup>$</sup><span class="naira">37</span> <sup>43</sup> <small
+                          class="text-muted"><br>($1.83/100 Sheets) $40.78
+                          $35.56 with Subscribe & Save discount</small><br> <span class="save">Save $2.00</span> with coupon
+                        Get it as soon as <b>Thu, Oct 6 </b> <br>$650.28 shipping</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-group me-5 rowFour">
+                  <div class="card me-3 mb-2 border border-1 rounded-1">
+                    <img src="./assets/paperPlate.jpg" class="card-img-top home pt-5 pb-4" alt="tisue paper">
+                    <div class="card-body">
+                      <p class="card-text"><a href="#" class="text-decoration-none text-dark"> Bounty Quick-Size Paper Towels,
+                          White, <br> 16 Family Rolls = 40 Regular Rolls</a><br>
+                        <b>16 Rolls (Pack of 1).</b>
+                      </p>
+                      <p class="card-text"><sup>$</sup><span class="naira">37</span> <sup>43</sup> <small
+                          class="text-muted"><br>($1.83/100 Sheets) $40.78
+                          $35.56 with Subscribe & Save discount</small><br> <span class="save">Save $2.00</span> with coupon
+                        Get it as soon as <b>Thu, Oct 6 </b> <br>$650.28 shipping</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="container-fluid lastDiv fs-5 fw-1  text-center  my-5"><a href="#" class="see text-decoration-none">See all result</a></div>
+      
+          </div>
+
+        </section>
+
+        <!-- body ends -->
+
+        <!-- footer -->
+        <footer class="text-center text-lg-start">
+          <div class="backTop">
+            Back to top
+          </div>
+        </footer>
+        <footer class="text-center text-lg-start">
+            <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="">Get to know us</h5>
+        
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                        <a href="#!" class="text-white">Careers </a>
+                        </li>
+                        <li class="mb-2">
+                        <a href="#!" class="text-white">Blog</a>
+                        </li>
+                        <li class="mb-2">
+                        <a href="#!" class="text-white">About Amazon</a>
+                        </li>
+                        <li class="mb-2">
+                        <a href="#!" class="text-white">Investor Relations</a>
+                        </li>
+                        <li class="mb-2">
+                        <a href="#!" class="text-white">Amazon Devices</a>
+                        </li>
+                        <li class="mb-2">
+                        <a href="#!" class="text-white">Amazon Science</a>
+                        </li>
+                    </ul>
+               </div>
+  
+             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="s">Make money with us</h5>
+        
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                        <a href="#!" class="text-white">Sell Products on Amazon</a>
+                        </li>
+                        <li class="mb-2">
+                        <a href="#!" class="text-white">Sell on Amazon Business</a>
+                        </li>
+                        <li class="mb-2">
+                        <a href="#!" class="text-white">Sell Apps on amazon</a>
+                        </li>
+                        <li class="mb-2">
+                        <a href="#!" class="text-white">Become an Affiliate</a>
+                        </li>
+                        <li class="mb-2">
+                        <a href="#!" class="text-white">Advertise Your Products</a>
+                        </li>
+                        <li class="mb-2">
+                        <a href="#!" class="text-white">Self Publish with Us</a>
+                        </li>
+                        <li class="mb-2">
+                        <a href="#!" class="text-white">Host an Amazon Hub</a>
+                        </li>
+                        <li class="mb-2">
+                        <a href="#!" class="text-white">See More Make Money with Us</a>
+                        </li>
+                    </ul>
+               </div>
+  
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="">Get to know us</h5>
+  
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">
+                  <a href="#!" class="text-white">Amazon Business Card</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white">Shop with Points</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white">Reload your Balance</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white">Amazon Currency Converter</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mx">
+              <h5 class="">Make money with us</h5>
+  
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#!" class="text-white">Amazon and COVID-19 </a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"> Your Account </a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"> Your Orders </a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"> Shipping Rates & Policies </a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"> Returns & Replacements </a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white">
+                    Manage Your Content and Devices
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"> Amazon Assistant </a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"> Help </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"
+      ></script>
+
+
+</body>
+</html>

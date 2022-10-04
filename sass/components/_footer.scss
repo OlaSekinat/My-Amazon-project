@@ -1,0 +1,29 @@
+@use "../colors" as *;
+@use "../fonts" as *;
+
+footer {
+  background-color: $topNavBgColor;
+  h5 {
+    color: white;
+  }
+  ul {
+    li {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.b-top {
+  background-color: #232f3e !important;
+}
+.backTop{
+  background-color: #37475A;
+  display: block;
+  text-align: center;
+  color: whitesmoke;
+  padding: 15px 0;
+  line-height: 19px;
+  font-size: 13px;
+}

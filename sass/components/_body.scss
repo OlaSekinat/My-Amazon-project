@@ -1,0 +1,68 @@
+@use "../colors" as *;
+@use "../fonts" as *;
+
+ul{
+    
+ list-style: none;
+   
+    a{
+       text-decoration: none;
+       color: black;
+       font-size: 14px;
+       font-family: sans-serif;
+    }
+    
+}
+ul :hover {
+   color: rgb(246, 191, 76);
+}
+
+.holder{
+   border-right: 2px solid #dde;
+}
+.home-p{
+   font-size: 14px;
+   font-weight: 500;
+   font-family: sans-serif;
+}
+.second{
+   border-radius: 4px;
+   margin-top: 20px;
+  
+}
+
+.secondLine{
+   font-size: 14px;
+   font-weight: 500;
+   font-family: sans-serif;
+   border: 1px solid #dde;
+   
+}
+.lastDiv{
+   background-color: #eee;
+   border: none;
+   border-radius: 8px;
+   padding: 8px 18px;
+   font-family: sans-serif;
+}
+.see{
+   color: #007185;
+   font-size: 18px;
+   font-weight: 600;
+   font-family: sans-serif;
+}
+.lastDiv :hover{
+   text-decoration:underline !important;
+   color: rgb(216, 52, 52);
+   cursor: pointer;
+}
+.color{
+   width: 15px;
+   height: 15px;
+   border-radius: 2px;
+   border: 1px solid #dde;
+}
+.colorType{
+   display: grid;
+   flex-direction: row;
+}
